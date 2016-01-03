@@ -7,8 +7,14 @@
   'utils/mixins';
 
 // 2. Vendors
+// @import
+//   'vendor/normalize';
 @import
-  'vendor/normalize';
+  'vendor/bootstrap/scss/variables',
+  'vendor/bootstrap/scss/mixins',
+  'vendor/bootstrap/scss/normalize',
+  'vendor/bootstrap/scss/reboot',
+  'vendor/bootstrap/scss/grid';
 
 // 3. Base stuff
 @import
