@@ -3,41 +3,87 @@
 // -----------------------------------------------------------------------------
 
 
+$brand-primary:         #D95B43;
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
+
+
+/// Main brand color
+/// @type Color
+$brand-color: $brand-primary;
+
+/// Light grey
+/// @type Color
+$gray-lightest: #EDEDED !default;
+
+/// Medium grey
+/// @type Color
+$gray-light: #999 !default;
+
+/// Dark grey
+/// @type Color
+$gray-dark: #444 !default;
+
+$white:     #fff;
+$black:     #000;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-flex:               true;
+// $enable-rounded:            true !default;
+// $enable-shadows:            false !default;
+// $enable-gradients:          false !default;
+// $enable-transitions:        false !default;
+// $enable-hover-media-query:  false !default;
+// $enable-grid-classes:       true !default;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                    $white;
+$body-color:                 $gray-dark !default;
+
+
+// Links
+//
+// Style anchor elements.
+
+$text-color:                 $body-color;
+// $link-color:                 $brand-primary !default;
+// $link-decoration:            none !default;
+// $link-hover-color:           darken($link-color, 15%) !default;
+// $link-hover-decoration:      underline !default;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// $font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+// $font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
+// $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
+// $font-family-base:           $font-family-sans-serif !default;
 
 
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: $font-family-sans-serif;
+
+/// Header font family
+/// @type List
+$text-font-stack: $font-family-sans-serif;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
-
-
-/// Copy text color
-/// @type Color
-$text-color: #222 !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: #E50050 !default;
-
-/// Light grey
-/// @type Color
-$light-grey: #EDEDED !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: #999 !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: #444 !default;
-
+$code-font-stack: $font-family-monospace;
 
 
 
@@ -60,9 +106,6 @@ $breakpoints: (
   'medium': (min-width: 768px),
   'large': (min-width: 1024px),
 ) !default;
-
-
-
 
 
 

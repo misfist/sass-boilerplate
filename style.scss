@@ -1,12 +1,6 @@
 @charset 'UTF-8';
 
-// 1. Configuration and helpers
-@import
-  'utils/variables',
-  'utils/functions',
-  'utils/mixins';
-
-// 2. Vendors
+// 1. Vendors
 // @import
 //   'vendor/normalize';
 @import
@@ -14,7 +8,20 @@
   'vendor/bootstrap/scss/mixins',
   'vendor/bootstrap/scss/normalize',
   'vendor/bootstrap/scss/reboot',
-  'vendor/bootstrap/scss/grid';
+  'vendor/bootstrap/scss/grid',
+  'vendor/bootstrap/scss/forms',
+  'vendor/bootstrap/scss/buttons',
+  'vendor/bootstrap/scss/alert';
+
+// @import
+//   'vendor/bootstrap/scss/bootstrap';
+
+// 2. Configuration and helpers
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins';
+
 
 // 3. Base stuff
 @import
@@ -26,11 +33,14 @@
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/content';
 
 // 5. Components
 @import
-  'components/buttons';
+  'components/buttons',
+  'components/forms',
+  'components/alerts';
 
 // 6. Page-specific styles
 @import
